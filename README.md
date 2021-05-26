@@ -18,5 +18,5 @@ Teaching assistants:
 
 | Date | Topic |
 | --- | --- |
-| Monday May 31 | [Introduction to mathematical programming](https://bcornelusse.github.io/ELEN0445-microgrids/pdf/intro_math_programming-v2.pdf)  |
+| Monday May 31 | [Introduction to mathematical programming](https://bcornelusse.github.io/DENSYS-school/pdf/intro_math_programming-v2.pdf)  |
 |               |  [Python notebooks](notebooks/) |
