@@ -1,6 +1,6 @@
 # Densys school 2021
 
-This is a course on microgrids and local energy communities given at Master's level at ULiège.
+Optimization and machine learning applied to microgrid optimal control, optimal design, and forecasting.
 
 Prerequisites: 
  - Notions of electrical circuits analysis
