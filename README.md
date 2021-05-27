@@ -27,7 +27,7 @@ Teaching assistants:
 |               |Operationnal planning exercise |
 | Wednesday June 2 | Introduction to machine learning  |
 |               | Machine learning exercise |
-| Thursday June 3 | [Forecasting time series](point forecasts)(https://orbi.uliege.be/bitstream/2268/252530/1/2020-ELEN0445-1-microgrids-forecasting-lesson-1.pdf) ([Video](https://www.youtube.com/channel/UCpgd8WMQXcXkMw1KCsXdPhA))   |
+| Thursday June 3 | [Forecasting time series:point forecasts](https://orbi.uliege.be/bitstream/2268/252530/1/2020-ELEN0445-1-microgrids-forecasting-lesson-1.pdf) ([Video](https://www.youtube.com/channel/UCpgd8WMQXcXkMw1KCsXdPhA))   |
 |               | Forecasting exercise |
 |               | Probabilistic time series forecasting  |
 |               | Probabilistic forecasting assignment |
