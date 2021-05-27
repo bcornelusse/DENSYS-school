@@ -29,7 +29,7 @@ Teaching assistants:
 |               | Machine learning exercise |
 | Thursday June 3 | [Introduction to point forecasting](https://orbi.uliege.be/bitstream/2268/252530/1/2020-ELEN0445-1-microgrids-forecasting-lesson-1.pdf) ([Video](https://www.youtube.com/channel/UCpgd8WMQXcXkMw1KCsXdPhA))   |
 |               | Forecasting exercise |
-|               | Probabilistic time series forecasting  |
+|               | [Introduction to Probabilistic Forecasting](https://orbi.uliege.be/bitstream/2268/252531/1/2020-ELEN0445-1-microgrids-forecasting-lesson-2.pdf)  ([Video](https://youtu.be/-I_uPhs76Xk))   |
 |               | Probabilistic forecasting assignment |
 | Friday June 4 | Sizing a microgrid |
 |               | Sizing assignment |
