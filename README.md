@@ -24,7 +24,7 @@ Teaching assistants:
 |               | Introduction to optimal power flow OPF in DC grids |
 |               | Implementation of optimal power flow formulations |
 | Tuesday | Operationnal planning  |
-|               |Operationnal planning exercise |
+|               |Operationnal planning exercise : [Description](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/Description.pdf) [Simulator](https://github.com/bcornelusse/DENSYS-school/tree/main/Operationnal%20planning/microgrid-bench)|
 | Wednesday | Introduction to machine learning  |
 |               | Machine learning exercise |
 | Thursday | [Introduction to point forecasting](https://orbi.uliege.be/bitstream/2268/252530/1/2020-ELEN0445-1-microgrids-forecasting-lesson-1.pdf) ([Video](https://www.youtube.com/channel/UCpgd8WMQXcXkMw1KCsXdPhA))   |
