@@ -22,7 +22,7 @@ Teaching assistants:
 |               | Example Python notebooks: [LP example 1](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing) |
 |               | [MIP modeling exercises](pdf/MIP_exercises.pdf), [exercise 1 notebook](https://colab.research.google.com/drive/1XFCapbShLLqUgRNwaMn1kgr8PvUaXGjF?usp=sharing), [exercise 2 notebook](https://colab.research.google.com/drive/1XFCapbShLLqUgRNwaMn1kgr8PvUaXGjF?usp=sharing) |
 |               | Introduction to optimal power flow OPF in DC grids |
-|               | Implementation of optimal power flow formulations |
+|               | Hands on: [Implement and compare several optimal power flow formulations](https://colab.research.google.com/drive/1Nr06HZMWQRHXIu0JGBnVHKV7-8j_cpDu?usp=sharing) |
 | Tuesday | Operationnal planning  |
 |               |Operationnal planning exercise : [Description](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/Description.pdf), [Simulator](https://github.com/bcornelusse/DENSYS-school/tree/main/Operationnal%20planning/microgrid-bench)|
 | Wednesday | Introduction to machine learning  |
