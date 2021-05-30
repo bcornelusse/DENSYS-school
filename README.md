@@ -19,8 +19,8 @@ Teaching assistants:
 | Date | Topic |
 | --- | --- |
 | Monday | [Introduction to mathematical programming](pdf/intro_math_programming_v2.pdf)  |
-|               | [MIP modeling exercises](pdf/MIP_exercises.pdf) |
 |               | [Example Python notebooks](notebooks/) |
+|               | [MIP modeling exercises](pdf/MIP_exercises.pdf) |
 |               | Introduction to optimal power flow OPF in DC grids |
 |               | Implementation of optimal power flow formulations |
 | Tuesday | Operationnal planning  |
