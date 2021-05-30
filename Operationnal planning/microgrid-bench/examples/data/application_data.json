@@ -1,0 +1,36 @@
+{
+  "loads": [
+    {
+      "name": "non_flexible_load",
+      "capacity": 10.0
+    },
+    {
+      "name": "dishwasher",
+      "capacity": 2.0
+    },
+    {
+      "name": "washing_dryer",
+      "capacity": 4.0
+    }
+  ],
+  "generators": [
+    {
+      "name": "pv_production",
+      "capacity": 5.0,
+      "steerable": false,
+      "min_stable_generation": 0.0
+    }
+  ],
+  "storages": [
+    {
+      "name": "BSS_1",
+      "capacity": 4.0,
+      "max_charge_rate": 3.0,
+      "max_discharge_rate": 3.0,
+      "charge_efficiency": 0.96,
+      "discharge_efficiency": 0.95
+    }
+  ],
+  "period_duration": 1,
+  "peak_price": 0
+}
