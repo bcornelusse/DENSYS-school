@@ -20,7 +20,7 @@ Teaching assistants:
 | --- | --- |
 | Monday | [Introduction to mathematical programming](pdf/intro_math_programming_v2.pdf)  |
 |               | Example Python notebooks: [LP example 1](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing) |
-|               | [MIP modeling exercises](pdf/MIP_exercises.pdf), [Exercise 1 notebook](https://colab.research.google.com/drive/1XFCapbShLLqUgRNwaMn1kgr8PvUaXGjF?usp=sharing), [Exercise 2 notebook]() |
+|               | [MIP modeling exercises](pdf/MIP_exercises.pdf), [exercise 1 notebook](https://colab.research.google.com/drive/1XFCapbShLLqUgRNwaMn1kgr8PvUaXGjF?usp=sharing), [exercise 2 notebook](https://colab.research.google.com/drive/1XFCapbShLLqUgRNwaMn1kgr8PvUaXGjF?usp=sharing) |
 |               | Introduction to optimal power flow OPF in DC grids |
 |               | Implementation of optimal power flow formulations |
 | Tuesday | Operationnal planning  |
