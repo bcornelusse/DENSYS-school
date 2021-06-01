@@ -22,7 +22,7 @@ Teaching assistants:
 |               | MIP modeling exercises: [exercises pdf](pdf/MIP_exercises.pdf), [exercise 1 notebook](https://colab.research.google.com/drive/1dVQyXylIrwJvaD23hY2p1_xkplJfROqm?usp=sharing), [exercise 2 notebook](https://colab.research.google.com/drive/1XFCapbShLLqUgRNwaMn1kgr8PvUaXGjF?usp=sharing) |
 |               | Lecture: [introduction to optimal power flow (OPF) in DC grids](pdf/NLP_CVXP_DC_OPF.pdf) |
 |               | Hands on session: [Implement and compare several OPF formulations in a notebook](https://colab.research.google.com/drive/1Nr06HZMWQRHXIu0JGBnVHKV7-8j_cpDu?usp=sharing) |
-| Tuesday | Lecture: [Operationnal planning](pdf/intro_math_programming_v2.pdf)  |
+| Tuesday | Lecture: [Operationnal planning](pdf/operating_a_microgrid.pdf)  |
 |               |Operationnal planning exercise : [Description](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/Description.pdf), [Simulator](https://github.com/bcornelusse/DENSYS-school/tree/main/Operationnal%20planning/microgrid-bench)|
 | Wednesday | Introduction to machine learning  |
 |               | Machine learning exercise |
