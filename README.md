@@ -25,7 +25,7 @@ Teaching assistants:
 | Tuesday | Lecture: [Operationnal planning](pdf/operating_a_microgrid.pdf)  |
 |               |Operationnal planning exercise : [Description](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/OP_application_description.pdf), download the [Simulator](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/microgrid-simulator.zip)|
 | Wednesday | Lecture: [Introduction to machine learning](pdf/IntroductiontoMachineLearningDENSYS2021.pdf)  |
-|               | Exercise: [Occupancy prediction](https://colab.research.google.com/drive/1UoUrG6N2I5RxA5g0IpXCH09gnsGybezG?usp=sharing) |
+|               | Exercise: [Occupancy detection](https://colab.research.google.com/drive/1qhVUg9_W-4U3AcQXyP9ZW7TfmbUX91Mz?usp=sharing) |
 | Thursday | [Introduction to point forecasting](https://orbi.uliege.be/bitstream/2268/252530/1/2020-ELEN0445-1-microgrids-forecasting-lesson-1.pdf) ([Video](https://www.youtube.com/channel/UCpgd8WMQXcXkMw1KCsXdPhA))   |
 |               | [Assignment: Point forecasting of PV generation](https://orbi.uliege.be/bitstream/2268/260337/1/2020-ELEN0445-1-microgrids-forecasting-assignement.pdf) ([Video](https://youtu.be/lppy-atOisM)) will be done in exercise session, download the [Python code](notebooks/assignment_files.tar.gz)|
 |               | [Introduction to Probabilistic Forecasting](https://orbi.uliege.be/bitstream/2268/252531/1/2020-ELEN0445-1-microgrids-forecasting-lesson-2.pdf)  ([Video](https://youtu.be/-I_uPhs76Xk))   |
