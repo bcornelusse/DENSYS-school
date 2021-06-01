@@ -23,7 +23,7 @@ Teaching assistants:
 |               | Lecture: [introduction to optimal power flow (OPF) in DC grids](pdf/NLP_CVXP_DC_OPF.pdf) |
 |               | Hands on session: [Implement and compare several OPF formulations in a notebook](https://colab.research.google.com/drive/1Nr06HZMWQRHXIu0JGBnVHKV7-8j_cpDu?usp=sharing) |
 | Tuesday | Lecture: [Operationnal planning](pdf/operating_a_microgrid.pdf)  |
-|               |Operationnal planning exercise : [Description](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/OP_application_description.pdf), [Simulator](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/microgrid-simulator.zip)|
+|               |Operationnal planning exercise : [Description](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/OP_application_description.pdf), download the [Simulator](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/microgrid-simulator.zip)|
 | Wednesday | Introduction to machine learning  |
 |               | Machine learning exercise |
 | Thursday | [Introduction to point forecasting](https://orbi.uliege.be/bitstream/2268/252530/1/2020-ELEN0445-1-microgrids-forecasting-lesson-1.pdf) ([Video](https://www.youtube.com/channel/UCpgd8WMQXcXkMw1KCsXdPhA))   |
