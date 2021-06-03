@@ -28,7 +28,7 @@ Teaching assistants:
 |               | Exercise: [room occupancy prediction](https://colab.research.google.com/drive/1qhVUg9_W-4U3AcQXyP9ZW7TfmbUX91Mz?usp=sharing) and [data](notebooks/data.zip)|
 | Thursday | Lecture: [introduction to point forecasting](https://orbi.uliege.be/bitstream/2268/252530/1/2020-ELEN0445-1-microgrids-forecasting-lesson-1.pdf) ([Video](https://youtu.be/YxpKoVf2tNg))   |
 |               | Assignment: [point forecasting of PV generation](https://orbi.uliege.be/bitstream/2268/260337/1/2020-ELEN0445-1-microgrids-forecasting-assignement.pdf) ([Video](https://youtu.be/lppy-atOisM)) will be done in exercise session, download the [Python code](notebooks/assignment_files.tar.gz)|
-|               | Lecture: [introduction to Probabilistic Forecasting](https://orbi.uliege.be/bitstream/2268/252531/1/2020-ELEN0445-1-microgrids-forecasting-lesson-2.pdf)  ([Video](https://youtu.be/-I_uPhs76Xk))   |
+|               | Lecture: [introduction to Probabilistic Forecasting](https://orbi.uliege.be/bitstream/2268/252531/1/2020-ELEN0445-1-microgrids-forecasting-lesson-2.pdf)  ([Video](https://youtu.be/NQoyJPNUcCQ))   |
 |               | Assignment: [probabilistic forecasting of PV generation](https://orbi.uliege.be/bitstream/2268/260337/1/2020-ELEN0445-1-microgrids-forecasting-assignement.pdf) |
 | Friday | Lecture: [sizing a microgrid](pdf/microgrids-sizing_a_microgrid.pdf) |
 |               | Assignment: [description](), [code template]()|
