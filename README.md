@@ -31,4 +31,4 @@ Teaching assistants:
 |               | Lecture: [introduction to Probabilistic Forecasting](https://orbi.uliege.be/bitstream/2268/252531/1/2020-ELEN0445-1-microgrids-forecasting-lesson-2.pdf)  ([Video](https://youtu.be/NQoyJPNUcCQ))   |
 |               | Assignment: [probabilistic forecasting of PV generation](https://orbi.uliege.be/bitstream/2268/260337/1/2020-ELEN0445-1-microgrids-forecasting-assignement.pdf) |
 | Friday | Lecture: [sizing a microgrid](pdf/microgrids-sizing_a_microgrid.pdf) |
-|               | Assignment: [description](), [code template]()|
+|               | Assignment: [description](20201210_sizing_assignment.pdf), [code template](notebooks/microgrid_sizing_opt.zip)|
