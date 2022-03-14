@@ -31,3 +31,32 @@ Teaching assistants:
 |               | Assignment: [probabilistic forecasting of PV generation](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/f6c4019274fd17f17e8c3329fffa8ed88917dcd8/pdf/ELEN0445-1-microgrids-forecasting-assignement-2021.pdf) |
 | Friday | Lecture: [sizing a microgrid](pdf/microgrids-sizing_a_microgrid.pdf) |
 |               | Assignment: [description](pdf/20201210_sizing_assignment.pdf), [code template](notebooks/microgrid_sizing_opt.zip)|
+
+# References to dig the forecasting topic :)
+
+Lectures of Professor Pierre Pinson. :
+* [Renewables in Electricity Markets](http://pierrepinson.com/index.php/teaching/), in particular the modules 8, 9, and 10.
+* [Statistical and Machine Learning for Forecasting](https://youtu.be/e7uMRluA01M) during the DTU CEE Summer School 2019 on "Data-Driven Analytics and Optimization for Energy Systems", 17-21 June 2019, Copenhagen, Denmark.
+
+Note: Pierre Pinson is internationally recognized as a leading academic in forecasting, (stochastic) optimization and game theory for energy systems and markets, thanks to his multidisciplinary expertise in Operations Research and Management Science, Statistics, Economics, Meteorology and Energy/Electrical Engineering
+
+The book:
+```
+@book{morales2013integrating,
+  title={Integrating renewables in electricity markets: operational problems},
+  author={Morales, Juan M and Conejo, Antonio J and Madsen, Henrik and Pinson, Pierre and Zugno, Marco},
+  volume={205},
+  year={2013},
+  publisher={Springer Science \& Business Media}
+}
+```
+
+The forecasting part of the thesis:
+```
+@thesis{dumas2021weather,
+  title={Weather-based forecasting of energy generation, consumption and price for electrical microgrids management},
+  author={Dumas, Jonathan},
+  journal={arXiv preprint arXiv:2107.01034},
+  year={2021}
+}
+```
