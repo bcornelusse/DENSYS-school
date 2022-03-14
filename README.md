@@ -26,8 +26,8 @@ Teaching assistants:
 | Wednesday | Lecture: [introduction to machine learning](pdf/IntroductiontoMachineLearningDENSYS2021.pdf)  |
 |               | Exercise: [room occupancy prediction](https://colab.research.google.com/drive/1qhVUg9_W-4U3AcQXyP9ZW7TfmbUX91Mz?usp=sharing) and [data](notebooks/data.zip)|
 | Thursday | Lecture: [introduction to point forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) ([Video](https://youtu.be/NqezU_J1JQs))   |
-|               | Assignment: [point forecasting of PV generation](https://orbi.uliege.be/bitstream/2268/260337/1/2020-ELEN0445-1-microgrids-forecasting-assignement.pdf) ([Video](https://youtu.be/lppy-atOisM)) will be done in exercise session, download the [Python code](notebooks/assignment_files.tar.gz)|
+|               | Assignment: [point forecasting of PV generation](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/f6c4019274fd17f17e8c3329fffa8ed88917dcd8/pdf/ELEN0445-1-microgrids-forecasting-assignement-2021.pdf)) will be done in exercise session, download the [Python code](notebooks/assignment_files.tar.gz)|
 |               | Lecture: [introduction to Probabilistic Forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/27fcc893882f572d37a953b6a301e1a4f7671e83/pdf/ELEN0445-1-microgrids-forecasting-lesson-2-2021.pdf)  ([Video](https://youtu.be/jvHgJTsXDZg))   |
-|               | Assignment: [probabilistic forecasting of PV generation](https://orbi.uliege.be/bitstream/2268/260337/1/2020-ELEN0445-1-microgrids-forecasting-assignement.pdf) |
+|               | Assignment: [probabilistic forecasting of PV generation](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/f6c4019274fd17f17e8c3329fffa8ed88917dcd8/pdf/ELEN0445-1-microgrids-forecasting-assignement-2021.pdf) |
 | Friday | Lecture: [sizing a microgrid](pdf/microgrids-sizing_a_microgrid.pdf) |
 |               | Assignment: [description](pdf/20201210_sizing_assignment.pdf), [code template](notebooks/microgrid_sizing_opt.zip)|
