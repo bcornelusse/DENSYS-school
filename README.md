@@ -10,8 +10,10 @@ Instructor:
  - Bertrand Cornélusse
 
 Teaching assistants:
+ - Antonin Colot
  - Selmane Dakir
  - Jonathan Dumas
+ - Thomas Stegen
 
 # Lectures 
 
