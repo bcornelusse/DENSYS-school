@@ -20,7 +20,7 @@ Teaching assistants:
 | Date | Topic |
 | --- | --- |
 | Monday | Lecture: [introduction to mathematical programming](pdf/intro_math_programming_v2.pdf), [LP example 1 notebook](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2 notebook](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing)  |
-|               | MIP modeling exercises: [exercises pdf](pdf/MIP_exercises.pdf), [exercise 1 notebook](https://colab.research.google.com/drive/1dVQyXylIrwJvaD23hY2p1_xkplJfROqm?usp=sharing), [exercise 2 notebook](https://colab.research.google.com/drive/1UoUrG6N2I5RxA5g0IpXCH09gnsGybezG?usp=sharing) |
+|               | MIP modeling exercises: [exercises pdf](pdf/MIP_exercises.pdf), [exercise 1 (solved) notebook](https://colab.research.google.com/drive/1dVQyXylIrwJvaD23hY2p1_xkplJfROqm?usp=sharing), [exercise 2 notebook](https://colab.research.google.com/drive/1UoUrG6N2I5RxA5g0IpXCH09gnsGybezG?usp=sharing) |
 |               | Lecture: [introduction to optimal power flow (OPF) in DC grids](pdf/NLP_CVXP_DC_OPF.pdf) |
 |               | Hands on session: [implement and compare several OPF formulations in a notebook](https://colab.research.google.com/drive/1Nr06HZMWQRHXIu0JGBnVHKV7-8j_cpDu?usp=sharing) |
 | Tuesday | Lecture: [operationnal planning](pdf/operating_a_microgrid.pdf)  |
