@@ -20,11 +20,11 @@ Teaching assistants:
 | Date | Topic |
 | --- | --- |
 | Monday | Lecture: [introduction to mathematical programming](pdf/intro_math_programming_v2.pdf), [LP example 1 notebook](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2 notebook](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing)  |
-|               | MIP modeling exercises: [exercises pdf](pdf/MIP_exercises.pdf), [exercise 1 (solved) notebook](https://colab.research.google.com/drive/1dVQyXylIrwJvaD23hY2p1_xkplJfROqm?usp=sharing), [exercise 2 notebook](https://colab.research.google.com/drive/1UoUrG6N2I5RxA5g0IpXCH09gnsGybezG?usp=sharing) |
-|               | Lecture: [introduction to optimal power flow (OPF) in DC grids](pdf/NLP_CVXP_DC_OPF.pdf) |
+| PM            | Lecture: [introduction to optimal power flow (OPF) in DC grids](pdf/NLP_CVXP_DC_OPF.pdf) |
 |               | Hands on session: [implement and compare several OPF formulations in a notebook](https://colab.research.google.com/drive/1Nr06HZMWQRHXIu0JGBnVHKV7-8j_cpDu?usp=sharing) |
-| Tuesday | Lecture: [operationnal planning](pdf/operating_a_microgrid.pdf)  |
-|               |(To be updated) Exercise : [description](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/OP_application_description.pdf), download the [simulator](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/microgrid-simulator.zip)|
+| Tuesday      | MIP modeling exercises: [exercises pdf](pdf/MIP_exercises.pdf), [exercise 1 (solved) notebook](https://colab.research.google.com/drive/1dVQyXylIrwJvaD23hY2p1_xkplJfROqm?usp=sharing), [exercise 2 notebook](https://colab.research.google.com/drive/1UoUrG6N2I5RxA5g0IpXCH09gnsGybezG?usp=sharing) |
+|               | Lecture: [operationnal planning](pdf/operating_a_microgrid.pdf)  |
+| PM            |(To be updated) Exercise : [description](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/OP_application_description.pdf), download the [simulator](https://github.com/bcornelusse/DENSYS-school/blob/main/Operationnal%20planning/microgrid-simulator.zip)|
 | Wednesday | Lecture: [introduction to machine learning](pdf/IntroductiontoMachineLearningDENSYS2021.pdf)  |
 |               | Exercise: [room occupancy prediction](https://colab.research.google.com/drive/1qhVUg9_W-4U3AcQXyP9ZW7TfmbUX91Mz?usp=sharing) and [data](notebooks/data.zip)|
 | Thursday | Lecture: [introduction to point forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) ([Video](https://youtu.be/NqezU_J1JQs))   |
