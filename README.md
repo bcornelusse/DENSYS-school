@@ -32,7 +32,7 @@ Teaching assistants:
 |               | Lecture: [introduction to Probabilistic Forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/27fcc893882f572d37a953b6a301e1a4f7671e83/pdf/ELEN0445-1-microgrids-forecasting-lesson-2-2021.pdf)  ([Video](https://youtu.be/jvHgJTsXDZg))   |
 |               | Assignment: [probabilistic forecasting of PV generation](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/f6c4019274fd17f17e8c3329fffa8ed88917dcd8/pdf/ELEN0445-1-microgrids-forecasting-assignement-2021.pdf) |
 | Friday | Lecture: [sizing a microgrid](pdf/microgrids-sizing_a_microgrid.pdf) |
-|               | Assignment: [description](pdf/20201210_sizing_assignment.pdf), [code template](notebooks/microgrid_sizing_opt.zip)|
+|               | Assignment: [description](pdf/EV_charging_assignment.pdf), |
 
 # References to dig the forecasting topic :)
 
