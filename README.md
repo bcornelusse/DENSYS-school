@@ -1,4 +1,4 @@
-# Densys school 2022 - March 21 to 25
+# Densys school 2023 - April 3-7
 
 Optimization and machine learning applied to microgrid optimal control, optimal design, and forecasting.
 
@@ -11,8 +11,6 @@ Instructor:
 
 Teaching assistants:
  - Antonin Colot
- - Selmane Dakir
- - Jonathan Dumas
  - Thomas Stegen
 
 # Lectures 
