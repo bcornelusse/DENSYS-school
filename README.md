@@ -13,7 +13,32 @@ Teaching assistants:
  - Antonin Colot
  - Thomas Stegen
 
+Lunch break from 12h30 to 13h30.
+
 # Lectures 
+
+
+| Day | Time | Topic |
+| --- | --- | --- |
+| Monday | 9h00  | Introduction and objectives |
+|        | 10h00 | Introduction to optimization, a simple network flow problem |
+|        | 13h30 | Modeling the electrical grid |
+|        | 14h30 | Optimal power flow, non-convex version |
+| Tuesday | 9h00  | Introduction to discrete optimization |
+|         | 10h00 | The distribution network expansion planning problem |
+|         | 15h00 | Real-time optimization in a (single-bus) microgrid |
+| Wednesday | 9h00  | Operational planning in a (single-bus) microgrid with perfect forecasts |
+|           | 11h30 | Microgrid (single-bus) sizing |
+|           | 14h30 | Active network management: let's put together optimal power flow and operation planning |
+| Thursday | 9h00  | A short introduction to machine learning |
+|          | 13h30 | Forecasting PV and load |
+| Friday | 9h00  | Operational planning in a (single-bus) microgrid with **im**perfect forecasts |
+| --- | --- | --- |
+
+
+
+
+--- Old
 
 | Date | Topic |
 | --- | --- |
