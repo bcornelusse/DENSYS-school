@@ -33,8 +33,6 @@ Lunch break from 12h30 to 13h30.
 | Thursday | 9h00  | A short introduction to machine learning |
 |          | 13h30 | Forecasting PV and load |
 | Friday | 9h00  | Operational planning in a (single-bus) microgrid with **im**perfect forecasts |
-| --- | --- | --- |
-
 
 
 
