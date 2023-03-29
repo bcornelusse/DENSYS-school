@@ -12,6 +12,7 @@ Instructor:
 Teaching assistants:
  - Antonin Colot
  - Thomas Stegen
+ - Geoffrey Bailly
 
 Lunch break from 12h30 to 13h30.
 
