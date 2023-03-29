@@ -23,6 +23,7 @@ Lunch break from 12h30 to 13h30.
 | --- | --- | --- |
 | Monday | 9h00  | [Introduction and objectives](pdf/densys_1_1_intro.pdf) |
 |        | 10h00 | [Introduction to optimization, a simple network flow problem](pdf/densys_1_2_LP_network_flow.pdf) |
+|        |       | [LP example 1 notebook, Pyomo example](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2 notebook](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing) |
 |        | 13h30 | Modeling the electrical grid |
 |        | 14h30 | Optimal power flow, non-convex version |
 | Tuesday | 9h00  | Introduction to discrete optimization |
