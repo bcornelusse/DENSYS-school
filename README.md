@@ -13,6 +13,7 @@ Teaching assistants:
  - Antonin Colot
  - Thomas Stegen
  - Geoffrey Bailly
+ - Bastien Ewbank
 
 Lunch break from 12h30 to 13h30.
 
@@ -26,7 +27,6 @@ Lunch break from 12h30 to 13h30.
 |        |       | [LP example 1 notebook, Pyomo example](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2 notebook](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing) |
 |        | 13h30 | [Modeling the electrical grid, optimal power flow in an AC grid](pdf/densys_1_3_Modeling_the_electrical_grid.pdf)|
 | Tuesday | 9h00  | [Introduction to discrete optimization: the distribution network expansion planning problem](pdf/densys_2_1_MIP.pdf) |
-|         | 15h00 | Real-time optimization in a (single-bus) microgrid |
 | Wednesday | 9h00  | Operational planning in a (single-bus) microgrid with perfect forecasts |
 |           | 13h30 | Microgrid (single-bus) sizing |
 | Thursday | 9h00  | A short introduction to machine learning |
