@@ -32,7 +32,7 @@ Lunch break from 12h30 to 13h30.
 | Thursday | 9h00  | Lecture: [introduction to machine learning](pdf/IntroductiontoMachineLearningDENSYS2021.pdf)  |
 |          |     | Exercise: [room occupancy prediction](https://colab.research.google.com/drive/1qhVUg9_W-4U3AcQXyP9ZW7TfmbUX91Mz?usp=sharing) and [data](notebooks/data.zip)|
 |          | 13h30 | Lecture: [introduction to point forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) ([Video](https://youtu.be/NqezU_J1JQs))   |
-|          |       | [Forecasting assignment](pdf/densys_forecasting_assignment.pdf) and [code template]()|
+|          |       | [Forecasting assignment](pdf/densys_forecasting_assignment.pdf) and [code template](pdf/PV_forecasting_template.zip)|
 | Friday | 9h00  | Smart-microgrids' team research activities presentations |
 
 
