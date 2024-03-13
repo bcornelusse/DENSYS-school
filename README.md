@@ -10,15 +10,32 @@ Instructor:
  - Bertrand Cornélusse
 
 Teaching assistants:
- - Antonin Colot
- - Thomas Stegen
+ - Clément Moureau
  - Geoffrey Bailly
- - Bastien Ewbank
+ - Manon Cornet
+ - Thomas Stegen
 
 Lunch break from 12h30 to 13h30.
 
 # Lectures 
 
+| Day | Time | Topic |
+| --- | --- | --- |
+| Monday | 9h00  | [Introduction and objectives](pdf/densys_1_1_intro.pdf) |
+|        | 10h00 | [Introduction to optimization, a simple network flow problem](pdf/densys_1_2_LP_network_flow.pdf) |
+|        |       | [LP example 1 notebook, Pyomo example](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2 notebook](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing) |
+|        | 13h30 | [Hands on session](https://colab.research.google.com/drive/1lrWL7sOrazTzlapVxcxrv_ZvVUZADC0h?usp=sharing) |
+| Tuesday | 9h00  | **TO BE UPDATED**[Real-time optimization of a microgrid](pdf/densys_2_1_RTO.pdf) |
+|         | 13h30 | **TO BE UPDATED** [Hands on session]() |
+| Wednesday | 9h00  | **TO BE UPDATED**Lecture: [introduction to machine learning](pdf/IntroductiontoMachineLearningDENSYS2021.pdf)  |
+|          |     | **TO BE UPDATED**Exercise: [room occupancy prediction](https://colab.research.google.com/drive/1qhVUg9_W-4U3AcQXyP9ZW7TfmbUX91Mz?usp=sharing) and [data](notebooks/data.zip)|
+|          | 13h30 | **TO BE UPDATED**Lecture: [introduction to point forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) ([Video](https://youtu.be/NqezU_J1JQs))   |
+|          |       | **TO BE UPDATED**[Forecasting assignment](pdf/densys_forecasting_assignment.pdf) and [code template](pdf/PV_forecasting_template.zip)|
+| Thuesday | 9h00  | **TO BE UPDATED** [Operational planning in a (single-bus) microgrid with perfect forecasts and sizing](pdf/20230404_microgrids_optimization.pdf) |
+|          |       | **TO BE UPDATED**[Assignment](pdf/densys_OP_sizing_2023.pdf) and [code template](Operationnal%20planning/OPandSizing.zip) |
+| Friday | 9h00  | Smart-microgrids' team research activities presentations |
+
+--- 2023
 
 | Day | Time | Topic |
 | --- | --- | --- |
