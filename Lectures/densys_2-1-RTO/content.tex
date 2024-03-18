@@ -13,16 +13,16 @@
 
 \begin{frame} {Lecture objectives}
     \begin{itemize}
-        \item Formulate the real time optimization problem
+        \item Formulate the real-time optimization problem
         \item Understand it's connection with other control problems
-        \item Practice linear programming modeling, and gain intuition in the solutions' properties
+        \item Practice linear programming modeling and gain intuition in the solutions' properties
         \item Understand the benefits of optimization with respect to simple rules
     \end{itemize}
 \end{frame}
 
 \begin{frame} {What is real-time optimization}
 \begin{itemize}
-\item Real-time optimization is a secondary control layer that sends reference power set-points, or targets, to devices, to 
+\item Real-time optimization is a secondary control layer that sends reference power set-points, or targets, to devices to 
 \begin{itemize}
     \item minimize the system's operation cost
     \item restore margins for droop controllers (primary control layer). 
@@ -44,9 +44,9 @@
 \begin{frame} {Methods}
 \begin{itemize}
 \item  Real-time optimization can be accomplished through different methods. 
-\item Many controllers use basic if-then rules, i.e. \textbf{rule-based controllers}. 
+\item Many controllers use basic if-then rules, i.e., \textbf{rule-based controllers}. 
 \item Although these rules are simple and easy to understand, they are not ideal for microgrids with numerous devices or complex grid interaction mechanisms. 
-\item In such cases, \textbf{optimization-based control} is better suited. We will compare the two approaches on a simple example.
+\item In such cases, \textbf{optimization-based control} is better suited. We will compare the two approaches in a simple example.
 \end{itemize}
 \end{frame}
 
@@ -54,7 +54,7 @@
     Real-time operation means that decisions are taken frequently, every $\Delta t$ seconds.
     \begin{itemize}
         \item An upper bound on $\Delta t$: renewable generation that can vary significantly within a few seconds, or abrupt load changes
-        \item A lower bound on $\Delta t$: lower-level control loops (e.g. power point tracking) must have the time to converge to avoid interference between control levels
+        \item A lower bound on $\Delta t$: lower-level control loops (e.g., power point tracking) must have the time to converge to avoid interference between control levels
     \end{itemize}
 
     We will assume that $\Delta t \approx 1 s$.
@@ -62,14 +62,14 @@
 
 \begin{frame}{Notation}
 \begin{itemize}
-    \item Lower case symbols are control variables
-    \item Upper case symbols and greek letters are fixed values (parameters or measurements)
+    \item Lowercase symbols are control variables
+    \item Uppercase symbols and Greek letters are fixed values (parameters or measurements)
     \item Subscript $t$ is a time index, sometimes omitted to simplify reading
     \item Subscript $d$ is a device index, omitted if there is only one device
-    \item Superscript $PV$ makes reference to a photovoltaic system
-    \item Superscript $bat$ makes reference to a battery storage system
-    \item Superscript $load$ makes reference to a load
-    \item Superscript $gen$ makes reference to a generator
+    \item Superscript $PV$ refers to a photovoltaic system
+    \item Superscript $bat$ refers to a battery storage system
+    \item Superscript $load$ refers to a load
+    \item Superscript $gen$ refers to a generator
 \end{itemize}
     
 
@@ -81,7 +81,7 @@
     \begin{multicols}{2}
         
     
-    Let us consider a off-grid microgrid with photovoltaic panels with an installed capacity of $C^{PV}$, a stationary battery, a backup diesel generator, and an uncontrollable load. For now, we are neglecting the electrical grid connecting these devices.
+    Let us consider an off-grid microgrid with photovoltaic panels with an installed capacity of $C^{PV}$, a stationary battery, a backup diesel generator, and an uncontrollable load. For now, we are neglecting the electrical grid connecting these devices.
 
     \begin{center}
     \includegraphics[width=0.5\textwidth]{images/off_grid_1.pdf}        
@@ -104,7 +104,7 @@ This state must thus be partly measured and partly estimated.
 \begin{frame}{About the Maximum Power Point $\bar{P}^{PV}_t$}
 
     %\begin{multicols}{2}
-    This quantity is usually unknown, and it is approached when the inverter is working at its maximum power point (MPP). As soon as a curtailment instruction is given, i.e., a set point below the maximum power point, the actual MPP is unknown and must be estimated. 
+    This quantity is usually unknown and is approached when the inverter is working at its maximum power point (MPP). As soon as a curtailment instruction is given, i.e., a set point below the maximum power point, the actual MPP is unknown and must be estimated. 
 
     \begin{center}    
     \includegraphics[width=0.35\textwidth]{images/Solar-Cell-IV-curve-with-MPP.png}%\\
@@ -123,7 +123,7 @@ The maximum power the battery can deliver $\bar{P}^{bat}_t$ or consume $\underli
 
 \begin{frame}{Generator}
  A generator may need a nonnegligible minimum time to start up, and too frequent starts and stops should be avoided to limit wear and tear.
- There is a minimum stable generation level, and ramping constraints.
+ There is a minimum stable generation level and ramping constraints.
 
  We will consider a simple model in this lecture.
 \end{frame}
@@ -216,7 +216,7 @@ Illustration of the rule-based controller when $C^{PV} > \underline{P}^{bat}_t >
 
 \begin{frame}{Hands on}
     \begin{block}{Let's code and test our rule-based controller! }
-        Implement the rule-based controller in the Google colab template provided and test the values of the example.
+        Implement the rule-based controller in the Google Colab template provided and test the values of the example.
     \end{block}    
 \end{frame}
 
@@ -238,14 +238,14 @@ An alternative way of solving this problem is to state the problem as a linear p
 \end{subequations}
 
 \begin{block}{Let's code and test our optimization-based controller! }
-    Implement the optimization-based controller in the Google colab template provided and test the values of the previous example.
+    Implement the optimization-based controller in the Google Colab template provided and test the values of the previous example.
 \end{block}    
 
 With $\epsilon < \pi^{gen}$, the objective function favors PV generation (free), then the battery, then the generator. 
 
 \begin{itemize}
     \item The coefficient $\epsilon$ is somewhat virtual but could also model a battery usage cost or a value degradation when $p^{bat} > 0$.
-    \item In case of excess PV, charging the battery is preferred over curtailment, since having $p^{bat} < 0$ decreases the objective. 
+    \item In case of excess PV, charging the battery is preferred over curtailment since having $p^{bat} < 0$ decreases the objective. 
     \item Without this coefficient, the optimization problem would consider charging the battery or curtailing renewable generation as equivalent solutions.
 \end{itemize}
 
@@ -287,7 +287,7 @@ This leads to Problem~\eqref{eq:RT2}.
 \end{subequations}
 
 \begin{block}{Test infeasibility}
-    Find an input state that makes Problem~\eqref{eq:RT1} infeasible, implement Problem~\eqref{eq:RT2} and compare.
+    Find an input state that makes Problem~\eqref{eq:RT1} infeasible, implement Problem~\eqref{eq:RT2}, and compare.
 \end{block}
 
 \end{frame}
@@ -297,10 +297,10 @@ This leads to Problem~\eqref{eq:RT2}.
 \begin{frame}[allowframebreaks]{Sets of devices}
 In the general case, we can have an arbitrary number of devices of each type.
 \begin{block}{Example}
-Instead of one PV inverter we now have a set $\mathcal{D}^{PV}$ of PV inverters.
+Instead of one PV inverter, we now have a set $\mathcal{D}^{PV}$ of PV inverters.
 \end{block}
 
-Straightforward adapations: 
+Straightforward adaptations: 
 \begin{itemize}
     \item Sum over all these devices in the constraints and objective
     \item Express device-level constraints for all devices
@@ -314,7 +314,7 @@ Straightforward adapations:
     
 \end{block}
 
-A less obvious adapatation is related to the power sharing among devices of the same type.
+A less obvious adaptation is related to the power-sharing among devices of the same type.
 
 Open question: do you see other adaptations? 
 \end{frame}
@@ -323,14 +323,14 @@ Open question: do you see other adaptations?
     Devices of the same type may \textit{differ} by some parameters such as efficiencies and costs. 
     In that case, the optimizer will decide to use the devices by \alert{merit order} (lowest cost first) unless some technical constraints lead to other solutions.
 
-    If devices are \textit{perfectly equivalent} then \alert{multiple solutions} may be optimal.
-    It is then up to the user to decide whether he wants to share equally the power or rather shut down a maximum of devices, or ...
+    If devices are \textit{perfectly equivalent}, then \alert{multiple solutions} may be optimal.
+    It is then up to the user to decide whether he wants to share the power equally or rather shut down a maximum of devices, or ...
     
     \begin{block}{Example}
-        Share the curtailment between two equivalent PV installations (same peak power, orientation and inverter).    
+        Share the curtailment between two equivalent PV installations (same peak power, orientation, and inverter).    
     \end{block}
     A possibility is to solve the optimization problem first and then to fix all decisions except those under consideration.
-    Then to rerun a second problem by forcing the original objective to take the optimal value and changing the objective to reflect the sharing goal.
+    Then rerun a second problem by forcing the original objective to take the optimal value and changing the objective to reflect the sharing goal.
     For our example a new objective could be $\sum_{d \in\mathcal{D}^{PV}} {p^{PV}_d}^2$.
 
     Let $$z^{(2), \star} = \min \eqref{eq:obj_2} \quad \text{s.t.} \eqref{eq:bal_2} - \eqref{eq:nonneg_2}$$
@@ -350,8 +350,7 @@ Open question: do you see other adaptations?
 
 \begin{frame}[allowframebreaks]{Battery limits and SoC update}
 
-    The battery management system (BMS) usually provides up to date limits to the battery power
-    $p^{bat}$ that reflect not only the inverter capability but also the SoC of the battery, the impact of the battery temperature, etc.
+    The battery management system (BMS) usually provides up-to-date limits to the battery power $p^{bat}$ that reflect not only the inverter capability but also the SoC of the battery, the impact of the battery temperature, etc.
     
     As a security, the SoC $s^{bat}$ can be tracked with 
     $$s^{bat}_{t+\Delta t} = S^{bat}_{t} + p^{bat}_t  \Delta t$$
@@ -359,33 +358,33 @@ Open question: do you see other adaptations?
     $$ \underline{S}^{bat} \leq s^{bat}_{t+\Delta t} \leq \bar{S}^{bat}.$$
 
     Since $\Delta t$ is small, the amount of energy charged or discharged is also small compared to the storage size but may become significant close to the SoC limits.
-    This type of contraint is optional here, but mandatory in a planning stage where the time step is on the order of a minute.
+    This type of constraint is optional here but mandatory in a planning stage where the time step is on the order of a minute.
 
-    However, this state evolution constraint is not accurate when accounting for charge and discharge efficiencies.
+    However, this state evolution constraint is inaccurate when accounting for charge and discharge efficiencies.
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Charge and discharge efficiencies}
-    To account for charge and discharge efficiencies we can subdivide the battery power into charge and discharge powers as 
+    To account for charge and discharge efficiencies, we can subdivide the battery power into charge and discharge powers as 
     $$ p^{bat} = p^{bat, charge} - p^{bat, discharge}$$
     with $p^{bat, charge} \geq 0$ and $p^{bat, discharge} \geq 0$.
 
-    Then the SoC update can be rewritten as
+    Then, the SoC update can be rewritten as
     $$s^{bat}_{t+\Delta t} = S^{bat}_{t} + p^{bat, charge}_t  \eta^{charge} \Delta t - p^{bat, discharge}_t / \eta^{discharge} \Delta t $$
     with $\eta^{charge} \in [0,1]$ and $\eta^{discharge} \in [0,1]$.
 
     \begin{itemize}
         \item Multiplying $p^{bat}$ by an average efficiency $\eta \in [0,1]$ would be fine for charging, but discharging the battery would lead to a problem in the energy balance.
         \begin{block}{Example}
-            Assume $p^{bat} = -10 kW$, although the battery is generating 10 kW over $\Delta t$, it will be discharged by only $10 kW \Delta t \times \eta$.    
+            Assume $p^{bat} = -10 kW$, although the battery generates 10 kW over $\Delta t$, it will be discharged by only $10 kW \Delta t \times \eta$.    
         \end{block}
         \item The optimizer may lead to a solution with simultaneous charge and discharge. 
-        This can be avoided by adding some constraints, such as $p^{bat, charge}\ times p^{bat, discharge} = 0$, or introducting binary variables. The problem then becomes either a non-linear program (NLP) or a mixed-integer linear program (MILP).
+        This can be avoided by adding constraints, such as $p^{bat, charge}\ times p^{bat, discharge} = 0$, or introducing binary variables. The problem becomes either a non-linear program (NLP) or a mixed-integer linear program (MILP).
         \item Non-linear efficiencies.
     \end{itemize}
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Grid connection}
-    A grid connection allows importing $p^{imp}_t$ or exporting $p^{exp}_t$ power to the grid but also increases the inertia of the system, offers the possibility to provide ancillary services, etc.
+    A grid connection allows importing $p^{imp}_t$ or exporting $p^{exp}_t$ power to the grid but also increases the system's inertia, offers the possibility to provide ancillary services, etc.
     \begin{center}
     \includegraphics[width=0.6\textwidth]{images/grid_tied_1.pdf}
     \end{center}
@@ -398,22 +397,22 @@ Open question: do you see other adaptations?
     The objective function must also be updated to consider the import $\pi^{imp}_t$ and export $\pi^{exp}_t$ prices : 
     $$\pi^{gen} p^{gen}  + \epsilon p^{bat} {\color{red}{+ \pi^{imp}_t p^{imp}_t - \pi^{exp}_t p^{exp}_t}} + V (p^+ + p^-)$$
 
-    Other aspects may also be invoiced such as the peak power or the power factor. However they are usually estimated on a period of several weeks.
+    Other aspects may also be invoiced, such as the peak power or the power factor. However, they are usually estimated over a period of several weeks.
 \end{frame}
 
 \begin{frame}{Device availability}
-    A device may be temporarily under maintenance or, for an electric car for example, it may not be connected or not available for recharging.
+    A device may be temporarily under maintenance, or, for an electric car, it may not be connected or not be available for recharging.
     This can be handled either:
     \begin{itemize}
-        \item by removing explicitely the related variables from the problem formulation
+        \item by removing explicitly the related variables from the problem formulation
         \item by forcing them to an adequate value (e.g. $\bar{P}^{charge}_t = 0$)        
     \end{itemize}
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Long-term targets}
-    Let's assume we have a storage device and for some reason we want to have it charged in a given amount of time.
+    Let's assume we have a storage device, and for some reason, we want to have it charged in a given amount of time.
     \begin{block}{Example}
-        It is 9AM, a car is charged at $50\%$ and we want it to be charged at $80\%$ at 5PM.
+        It is 9 AM, a car is charged at $50\%$, and we want it to be charged at $80\%$ at 5 PM.
     \end{block}
 
     Include a penalty in the objective function on the difference between the SoC $s^{bat}_{t+\Delta t}$ and the target SoC $S^{bat, \dagger}$:
@@ -424,7 +423,7 @@ Open question: do you see other adaptations?
 
     A more involved method is proposed in \\
     \textit{Dumas, J., Dakir, S., Liu, C., \& Cornélusse, B. (2021). Coordination of operational planning and real-time optimization in microgrids. Electric Power Systems Research, 190, 106634.}
-    where a value function is extracted from a planning problem (optimization over several hours) and integrated in the objective function to reach a trade-off between instataneous rewads and long-term rewards.
+    where a value function is extracted from a planning problem (optimization over several hours) and integrated into the objective function to reach a trade-off between instantaneous revenues and long-term rewards.
 \end{frame}
 
 
@@ -438,16 +437,16 @@ Open question: do you see other adaptations?
     It is possible to approximate non-linear efficiency and also maximal charge and discharge power using linear models.
     They depend on the SoC and the power. 
     
-    In the article below a convex enveloppe of the operating region is employed to obtain a linear model with a moderate increase of the number of variables and solution time.
+    In the article below, a convex envelope of the operating region is employed to obtain a linear model with a moderate increase in the number of variables and solution time.
 
     \textit{Gonzalez-Castellanos, A. J., Pozo, D., \& Bischi, A. (2019). Non-ideal linear operation model for li-ion batteries. IEEE Transactions on Power Systems, 35(1), 672-682.}
 
-    Remark: at very low power, converter inefficiency may also lead to low charge or discharge efficiency.
+    Remark: converter inefficiency may also lead to a low charge or discharge efficiency at very low power.
 \end{frame}
 
 
 \begin{frame}{Avoiding multiple solutions}
-    Besides having sets of similar devices which may lead to several equivalent solutions, other less instuitive reasons may also lead to multiple solutions.
+    Besides having sets of similar devices that may lead to several equivalent solutions, other less intuitive reasons may also lead to multiple solutions.
 
     We thus need rules for lifting indeterminacies, and we can follow a similar approach to the one of presented for handling several equivalent devices.
 \end{frame}
@@ -457,7 +456,7 @@ Open question: do you see other adaptations?
     Let us store $p_{t-\Delta t} in P$ We can for instance impose new constraints 
 
     $$| p_t - P| \leq \Delta P \Delta t$$
-    with $\Delta P$ a parameter to limit variations, expressed in power units per second.
+    with $\Delta P$, a parameter to limit variations expressed in power units per second.
 
-    Question: how to model the absolute value in a linear program?
+    Question: How do we model the absolute value in a linear program?
 \end{frame}
