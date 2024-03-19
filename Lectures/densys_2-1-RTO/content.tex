@@ -207,19 +207,12 @@ Input: the microgrid state.
     This should, however, not happen if the system and the microgrid's electric protections are properly designed. 
 \end{frame}
 
-\begin{frame}{Graphical view}
+\begin{frame}[label={RBC_example}]{Graphical view}
 \begin{multicols}{2}
 \includegraphics[width=0.5\textwidth]{images/RB_graphical.pdf}
 Illustration of the rule-based controller when $C^{PV} > \underline{P}^{bat}_t > 0$ and $\bar{P}^{bat}_t >0$ (index $t$ omitted in the graph).  Three $(p^{load}, \bar{P}^{PV})$ operating points are higlighted in green $(0.5,4)$, red $(4,5)$ and blue $(8,4)$, with the corresponding setpoints for $p^{PV}$, $p^{bat}$, and $p^{gen}$.
 \end{multicols}
 \end{frame}
-
-\begin{frame}{Hands on}
-    \begin{block}{Let's code and test our rule-based controller! }
-        Implement the rule-based controller in the Google Colab template provided and test the values of the example.
-    \end{block}    
-\end{frame}
-
 
 \subsection{Optimization-based controller}
 
@@ -236,10 +229,6 @@ An alternative way of solving this problem is to state the problem as a linear p
                     & p_t \geq 0
     \end{align}
 \end{subequations}
-
-\begin{block}{Let's code and test our optimization-based controller! }
-    Implement the optimization-based controller in the Google Colab template provided and test the values of the previous example.
-\end{block}    
 
 With $\epsilon < \pi^{gen}$, the objective function favors PV generation (free), then the battery, then the generator. 
 
@@ -286,9 +275,6 @@ This leads to Problem~\eqref{eq:RT2}.
 \end{align}
 \end{subequations}
 
-\begin{block}{Test infeasibility}
-    Find an input state that makes Problem~\eqref{eq:RT1} infeasible, implement Problem~\eqref{eq:RT2}, and compare.
-\end{block}
 
 \end{frame}
 
@@ -340,7 +326,7 @@ Open question: do you see other adaptations?
     \begin{align}
     \min        \quad  & \sum_{d \in\mathcal{D}^{PV}} {p^{PV}_d}^2 \label{eq:obj_3}\\
     \text{s.t.} \quad  & \eqref{eq:bal_2} - \eqref{eq:nonneg_2}  \label{eq:const_3} \\
-                       & \pi^{gen} p^{gen}  + \epsilon p^{bat} + V (p^+ + p^-) = z_2^\star \label{eq:eq_obj_3}%\\
+                       & \pi^{gen} p^{gen}  + \epsilon p^{bat} + V (p^+ + p^-) = z_2^\star \label{eq:eq_obj_3}\\
                        & (p^{gen} = p^{gen, (2), \star})\\
                        & (p^{bat} = p^{bat, (2), \star})
     \end{align}
@@ -451,12 +437,32 @@ Open question: do you see other adaptations?
     We thus need rules for lifting indeterminacies, and we can follow a similar approach to the one of presented for handling several equivalent devices.
 \end{frame}
 
-\begin{frame} {Avoid oscillations and frequent set point changes} 
+\begin{frame} {Avoid oscillations and large set point changes} 
 
-    Let us store $p_{t-\Delta t} in P$ We can for instance impose new constraints 
-
+    Let $P \leftarrow p_{t-\Delta t}$.
+    
+    To avoid large variations of the control actions, we can for instance impose new constraints 
     $$| p_t - P| \leq \Delta P \Delta t$$
     with $\Delta P$, a parameter to limit variations expressed in power units per second.
 
     Question: How do we model the absolute value in a linear program?
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Hands on}
+    In the Google Colab template provided, 
+    \begin{enumerate}
+        \item implement the rule-based controller (RBC), test the values of the example of slide \ref{RBC_example}
+        \item implement the optimization-based controller of Problem~\eqref{eq:RT1}, compare it to the RBC
+        \item implement the SoC update constraint with perfect efficiency
+        \item implement the imperfect charge and discharge efficiencies
+        \item add a grid connection with import and export prices and import/export limits
+        \item add an electric vehicle to your problem with a long-term charge target.
+    \end{enumerate}
+    \begin{itemize}
+        \item Test each of the controllers above using the time series of PV generation and load provided.
+        \item Report the total cost, the PV energy curtailed, and the usage of the battery.
+        \item Bonus: find an input state that makes Problem~\eqref{eq:RT1} infeasible, implement Problem~\eqref{eq:RT2}, and compare.
+    \end{itemize}
+    
 \end{frame}
