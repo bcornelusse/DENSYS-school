@@ -1,4 +1,4 @@
-# Densys school 2023 - March 18-22
+# Densys school 2024 - March 18-22
 
 Optimization and machine learning applied to microgrid optimal control, optimal design, and forecasting.
 
