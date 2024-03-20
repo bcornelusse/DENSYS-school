@@ -29,8 +29,8 @@ Lunch break from 12h30 to 13h30.
 |         | 13h30 | [Hands on session](https://colab.research.google.com/drive/1kC0bY-wds_kCIuEd2WDQNj-F-j5024-p?usp=sharing) |
 | Wednesday | 9h00  | Lecture: [Introduction to machine learning](pdf/IntroductiontoMachineLearningDENSYS2021.pdf)  |
 |          |     | Exercise: [Room occupancy prediction](https://colab.research.google.com/drive/1qhVUg9_W-4U3AcQXyP9ZW7TfmbUX91Mz?usp=sharing) and [data](notebooks/data.zip)|
-|          | 13h30 | **TO BE UPDATED**Lecture: [Introduction to point forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) ([Video](https://youtu.be/NqezU_J1JQs))   |
-|          |       | **TO BE UPDATED**[Forecasting assignment](pdf/densys_forecasting_assignment.pdf) and [code template](pdf/PV_forecasting_template.zip)|
+|          | 13h30 | Lecture: [Introduction to point forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) ([Video](https://youtu.be/NqezU_J1JQs))   |
+|          |       | **TO BE UPDATED**[Hand on forecasting session]()|
 | Thursday | 9h00  | [Operational planning in a (single-bus) microgrid with perfect forecasts and sizing](pdf/20230404_microgrids_optimization.pdf) |
 |          |       | **TO BE UPDATED**[Assignment](pdf/densys_OP_sizing_2023.pdf) and [code template](Operationnal%20planning/OPandSizing.zip) |
 | Friday | 9h00  | Smart-microgrids' team research activities presentations |
