@@ -34,6 +34,7 @@ Lunch break from 12h30 to 13h30.
 | Thursday | 9h00  | [Operational planning in a (single-bus) microgrid with perfect forecasts and sizing](pdf/20230404_microgrids_optimization.pdf) |
 |          |       | [Assignment](pdf/DENSYS_HW.pdf) and [code template](Operationnal%20planning/DENSYS_HW.zip) |
 | Friday | 9h00  | Smart-microgrids' team research activities presentations |
+|          |       | [Mevludin Glavic](pdf/Densys_Liege_March_2024_Glavic.pdf)|
 
 --- 2023
 
@@ -51,7 +52,7 @@ Lunch break from 12h30 to 13h30.
 |          | 13h30 | Lecture: [introduction to point forecasting](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) ([Video](https://youtu.be/NqezU_J1JQs))   |
 |          |       | [Forecasting assignment](pdf/densys_forecasting_assignment.pdf) and [code template](pdf/PV_forecasting_template.zip)|
 | Friday | 9h00  | Smart-microgrids' team research activities presentations |
-|          |       | [Mevludin Glavic](pdf/Densys_Liege_March_2024_Glavic.pdf)|
+
 
 
 
