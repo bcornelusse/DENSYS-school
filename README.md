@@ -35,6 +35,11 @@ Lunch break from 12h30 to 13h30.
 |          |       | [Assignment](pdf/DENSYS_HW.pdf) and [code template](Operationnal%20planning/DENSYS_HW.zip) |
 | Friday | 9h00  | Smart-microgrids' team research activities presentations |
 |          |       | [Mevludin Glavic](pdf/Densys_Liege_March_2024_Glavic.pdf)|
+|          |       | [Thomas Stegen](pdf/DENSYS_Thomas.pdf)|
+|          |       | [Geoffrey Bailly](pdf/DENSYS_Geoffrey.pdf)|
+|          |       | [Clément Moureau](pdf/DENSYS_Clement.pdf)|
+|          |       | [Cédric Verstraeten](pdf/DENSYS_Cedric.pdf)|
+
 
 --- 2023
 
