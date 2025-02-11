@@ -13,12 +13,107 @@
 
 \begin{frame} {Lecture objectives}
     \begin{itemize}
-        \item Formulate the real-time optimization problem
+        \item Why do we have to plan the operations?
+        \item Formulate the operational planning optimization problem
         \item Understand it's connection with other control problems
         \item Practice linear programming modeling and gain intuition in the solutions' properties
-        \item Understand the benefits of optimization with respect to simple rules
+        \item Understand the interest of good forecasting techniques
     \end{itemize}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Assumptions}
+\begin{itemize}
+    \item We take the role of the operator of the microgrid, who wants to optimize the way the energy is produced and used within the microgrid, and to optimize the interaction with the public grid (simple interaction, e.g. varying price).
+    \item We make the assumptions that the microgrid is single-user, and we also avoid the question of the “fast dynamics” of the components of the microgrid.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Reminder: control levels}
+
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Level} & \textbf{Function} & \textbf{Examples} \\ \hline
+        1 & Device level control & BSS control, reactive control \\ \hline
+        2 & Local area control & Frequency regulation, fast load shedding \\ \hline
+        3 & Supervisory control & Forecasting, operational planning \\ \hline
+        4 & Public Grid interaction & Ancillary services, energy markets \\ \hline
+        \end{tabular}
+        \caption{Control Levels and Their Corresponding Functions and Examples}
+        \label{tab:control_levels}
+    \end{table}
+
+    We will be mainly focused on levels 3 and 4.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Level 3: supervisory control}
+    \begin{itemize}
+        \item Generation and load dispatch 
+        \item Economic optimization
+        \item Spinning reserve
+        \item Forecasting
+        \item Data visualization and data management
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Level 4: interaction with the outside world}
+    \begin{itemize}
+        \item Electricity markets
+        \item Ancillary services markets
+        \item Distribution Management System interaction 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{When are operation decisions taken?}
+\begin{itemize}
+    \item It can be in real time: corrective decisions
+    \item Or in anticipation: preventive decisions
+    \item Why should we anticipate? because of time coupling constraints:
+    \begin{itemize}
+    \item The typical periodicity of renewable generation devices and consumption is a day
+    \item Human activity has weekly and seasonal periodicity
+    \item Storage, heating, EV demands create time coupling constraints
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Operational planning decision horizon $T$}
+
+    We cannot take preventive operation decisions too much in advance:
+    \begin{itemize}
+    \item too high uncertainty on the evolution of the state of the microgrid and its environment
+    \item anticipating a bit on the sequel, the problem we will have to solve may be intractable
+    \item We thus consider operating the system over one day to approx. one week. This can be more or less, depending on the particular situation of the microgrid (type of storage, type of business activity, etc.)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Operational planning decision duration $\Delta_t$}
+
+    \begin{itemize}
+        \item For computational reasons, we \textbf{discretize} the decisions in time.
+        \item Depending on the decision horizon, we may consider periods of 1 to 15 minutes where decisions are assumed constant 
+    \begin{itemize}
+        \item Example: constant charge power for a battery
+        \item Determining good decisions may become intractable if we have too many decisions in the decision horizon
+        \item Forecasts may anyway not be meaningful with a too high temporal resolution
+        \item This is coherent with market period duration
+    \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%----------
+
+
+
 
 \begin{frame} {What is real-time optimization}
 \begin{itemize}
@@ -226,7 +321,7 @@ An alternative way of solving this problem is to state the problem as a linear p
                     & p^{PV} \leq \bar{P}^{PV} \\
                     & -\underline{P}^{bat} \leq p^{bat} \leq \bar{P}^{bat} \\
                     & p^{gen} \leq \bar{P}^{gen}\\
-                    & p^{gen}, p^{PV} \geq 0
+                    & p_t \geq 0
     \end{align}
 \end{subequations}
 
@@ -271,7 +366,7 @@ This leads to Problem~\eqref{eq:RT2}.
                    & p^{PV} \leq \bar{P}^{PV}  \label{eq:PV_2}\\
                    & -\underline{P}^{bat} \leq p^{bat} \leq \bar{P}^{bat}  \label{eq:bat_2}\\
                    & p^{gen} \leq \bar{P}^{gen}  \label{eq:gen_2}\\
-                   & p^{gen}, p^{PV}  \geq 0  \label{eq:nonneg_2}
+                   & p_t \geq 0  \label{eq:nonneg_2}
 \end{align}
 \end{subequations}
 
