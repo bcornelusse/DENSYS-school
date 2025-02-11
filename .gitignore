@@ -11,3 +11,5 @@ Lectures/densys_2-1-RTO/main.fdb_latexmk
 *.snm
 *.gz
 *.toc
+*.fdb_latexmk
+*.aux
