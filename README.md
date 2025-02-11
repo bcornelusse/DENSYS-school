@@ -18,7 +18,7 @@ Teaching assistants:
 
 | Day | Time | Topic |
 | --- | --- | --- |
-| February 13 | Remote | [Introduction and objectives](pdf/densys_1_1_intro.pdf) |
+| February 13 | Remote | [Introduction and objectives](Lectures/densys_1-1_intro/main.pdf) |
 |        |  | [Introduction to optimization, a simple network flow problem](pdf/densys_1_2_LP_network_flow.pdf) |
 |        |       | [LP example 1 notebook, Pyomo example](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2 notebook](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing) |
 |        | | [Homework](https://colab.research.google.com/drive/1lrWL7sOrazTzlapVxcxrv_ZvVUZADC0h?usp=sharing) |
