@@ -108,7 +108,7 @@ This state must thus be partly measured and partly estimated.
 
     \begin{center}    
     \includegraphics[width=0.35\textwidth]{images/Solar-Cell-IV-curve-with-MPP.png}%\\
-    \includegraphics[width=0.35\textwidth]{images/Power-voltage_(P_-V)_curve.png}    
+    \includegraphics[width=0.55\textwidth]{images/Power-voltage_(P_-V)_curve.png}    
     \end{center}
 
     %\end{multicols}
@@ -280,6 +280,59 @@ This leads to Problem~\eqref{eq:RT2}.
 
 \section[General formulation of the optimization-based controller]{General formulation of the\\ optimization-based controller}
 
+\begin{frame}[allowframebreaks]{Battery limits and SoC update}
+
+    The battery management system (BMS) usually provides up-to-date limits to the battery power $p^{bat}$ that reflect not only the inverter capability but also the SoC of the battery, the impact of the battery temperature, etc.
+    
+    As a security, the SoC $s^{bat}$ can be tracked with 
+    $$s^{bat}_{t+\Delta t} = S^{bat}_{t} + p^{bat}_t  \Delta t$$
+    and bounded by SoC limits
+    $$ \underline{S}^{bat} \leq s^{bat}_{t+\Delta t} \leq \bar{S}^{bat}.$$
+
+    Since $\Delta t$ is small, the amount of energy charged or discharged is also small compared to the storage size but may become significant close to the SoC limits.
+    This type of constraint is optional here but mandatory in a planning stage where the time step is on the order of a minute.
+
+    However, this state evolution constraint is inaccurate when accounting for charge and discharge efficiencies.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Charge and discharge efficiencies}
+    To account for charge and discharge efficiencies, we can subdivide the battery power into charge and discharge powers as 
+    $$ p^{bat} = p^{bat, charge} - p^{bat, discharge}$$
+    with $p^{bat, charge} \geq 0$ and $p^{bat, discharge} \geq 0$.
+
+    Then, the SoC update can be rewritten as
+    $$s^{bat}_{t+\Delta t} = S^{bat}_{t} + p^{bat, charge}_t  \eta^{charge} \Delta t - p^{bat, discharge}_t / \eta^{discharge} \Delta t $$
+    with $\eta^{charge} \in [0,1]$ and $\eta^{discharge} \in [0,1]$.
+
+    \begin{itemize}
+        \item Multiplying $p^{bat}$ by an average efficiency $\eta \in [0,1]$ would be fine for charging, but discharging the battery would lead to a problem in the energy balance.
+        \begin{block}{Example}
+            Assume $p^{bat} = -10 kW$, although the battery generates 10 kW over $\Delta t$, it will be discharged by only $10 kW \Delta t \times \eta$.    
+        \end{block}
+        \item The optimizer may lead to a solution with simultaneous charge and discharge. 
+        This can be avoided by adding constraints, such as $p^{bat, charge}\ times p^{bat, discharge} = 0$, or introducing binary variables. The problem becomes either a non-linear program (NLP) or a mixed-integer linear program (MILP).
+        \item Non-linear efficiencies.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Grid connection}
+    A grid connection allows importing $p^{imp}_t$ or exporting $p^{exp}_t$ power to the grid but also increases the system's inertia, offers the possibility to provide ancillary services, etc.
+    \begin{center}
+    \includegraphics[width=0.6\textwidth]{images/grid_tied_1.pdf}
+    \end{center}
+    
+    The power balance must be updated to 
+    $$p^{PV}+p^{bat} +p^{gen} + p^- {\color{red} + p^{imp}}  = p^{load} + p^+ {\color{red} + p^{exp}} $$
+    but import $0 \leq p^{imp} \leq \bar{P^{imp}}$ and export limits $0 \leq p^{exp} \leq \bar{P^{exp}}$ must be considered. 
+    They model either a physical or a contractual limit.
+
+    The objective function must also be updated to consider the import $\pi^{imp}_t$ and export $\pi^{exp}_t$ prices : 
+    $$\pi^{gen} p^{gen}  + \epsilon p^{bat} {\color{red}{+ \pi^{imp}_t p^{imp}_t - \pi^{exp}_t p^{exp}_t}} + V (p^+ + p^-)$$
+
+    Other aspects may also be invoiced, such as the peak power or the power factor. However, they are usually estimated over a period of several weeks.
+\end{frame}
+
+
 \begin{frame}[allowframebreaks]{Sets of devices}
 In the general case, we can have an arbitrary number of devices of each type.
 \begin{block}{Example}
@@ -334,57 +387,6 @@ Open question: do you see other adaptations?
 
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Battery limits and SoC update}
-
-    The battery management system (BMS) usually provides up-to-date limits to the battery power $p^{bat}$ that reflect not only the inverter capability but also the SoC of the battery, the impact of the battery temperature, etc.
-    
-    As a security, the SoC $s^{bat}$ can be tracked with 
-    $$s^{bat}_{t+\Delta t} = S^{bat}_{t} + p^{bat}_t  \Delta t$$
-    and bounded by SoC limits
-    $$ \underline{S}^{bat} \leq s^{bat}_{t+\Delta t} \leq \bar{S}^{bat}.$$
-
-    Since $\Delta t$ is small, the amount of energy charged or discharged is also small compared to the storage size but may become significant close to the SoC limits.
-    This type of constraint is optional here but mandatory in a planning stage where the time step is on the order of a minute.
-
-    However, this state evolution constraint is inaccurate when accounting for charge and discharge efficiencies.
-\end{frame}
-
-\begin{frame}[allowframebreaks]{Charge and discharge efficiencies}
-    To account for charge and discharge efficiencies, we can subdivide the battery power into charge and discharge powers as 
-    $$ p^{bat} = p^{bat, charge} - p^{bat, discharge}$$
-    with $p^{bat, charge} \geq 0$ and $p^{bat, discharge} \geq 0$.
-
-    Then, the SoC update can be rewritten as
-    $$s^{bat}_{t+\Delta t} = S^{bat}_{t} + p^{bat, charge}_t  \eta^{charge} \Delta t - p^{bat, discharge}_t / \eta^{discharge} \Delta t $$
-    with $\eta^{charge} \in [0,1]$ and $\eta^{discharge} \in [0,1]$.
-
-    \begin{itemize}
-        \item Multiplying $p^{bat}$ by an average efficiency $\eta \in [0,1]$ would be fine for charging, but discharging the battery would lead to a problem in the energy balance.
-        \begin{block}{Example}
-            Assume $p^{bat} = -10 kW$, although the battery generates 10 kW over $\Delta t$, it will be discharged by only $10 kW \Delta t \times \eta$.    
-        \end{block}
-        \item The optimizer may lead to a solution with simultaneous charge and discharge. 
-        This can be avoided by adding constraints, such as $p^{bat, charge}\ times p^{bat, discharge} = 0$, or introducing binary variables. The problem becomes either a non-linear program (NLP) or a mixed-integer linear program (MILP).
-        \item Non-linear efficiencies.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}[allowframebreaks]{Grid connection}
-    A grid connection allows importing $p^{imp}_t$ or exporting $p^{exp}_t$ power to the grid but also increases the system's inertia, offers the possibility to provide ancillary services, etc.
-    \begin{center}
-    \includegraphics[width=0.6\textwidth]{images/grid_tied_1.pdf}
-    \end{center}
-    
-    The power balance must be updated to 
-    $$p^{PV}+p^{bat} +p^{gen} + p^- {\color{red} + p^{imp}}  = p^{load} + p^+ {\color{red} + p^{exp}} $$
-    but import $0 \leq p^{imp} \leq \bar{P^{imp}}$ and export limits $0 \leq p^{exp} \leq \bar{P^{exp}}$ must be considered. 
-    They model either a physical or a contractual limit.
-
-    The objective function must also be updated to consider the import $\pi^{imp}_t$ and export $\pi^{exp}_t$ prices : 
-    $$\pi^{gen} p^{gen}  + \epsilon p^{bat} {\color{red}{+ \pi^{imp}_t p^{imp}_t - \pi^{exp}_t p^{exp}_t}} + V (p^+ + p^-)$$
-
-    Other aspects may also be invoiced, such as the peak power or the power factor. However, they are usually estimated over a period of several weeks.
-\end{frame}
 
 \begin{frame}{Device availability}
     A device may be temporarily under maintenance, or, for an electric car, it may not be connected or not be available for recharging.
@@ -449,20 +451,20 @@ Open question: do you see other adaptations?
 \end{frame}
 
 
-\begin{frame}[allowframebreaks]{Hands on}
-    In the Google Colab template provided, 
-    \begin{enumerate}
-        \item (implement the rule-based controller (RBC), test the values of the example of slide \ref{RBC_example})
-        \item implement the optimization-based controller of Problem~\eqref{eq:RT1}
-        \item implement the SoC update constraint with perfect efficiency
-        \item implement the imperfect charge and discharge efficiencies
-        \item add a grid connection with import and export prices and import/export limits
-        \item add an electric vehicle to your problem with a long-term charge target.
-    \end{enumerate}
-    \begin{itemize}
-        \item Test each of the controllers above using the time series of PV generation and load provided.
-        \item Report the total cost, the PV energy curtailed, and the usage of the battery.
-        \item Bonus: find an input state that makes Problem~\eqref{eq:RT1} infeasible, implement Problem~\eqref{eq:RT2}, and compare.
-    \end{itemize}
-    
-\end{frame}
+%\begin{frame}[allowframebreaks]{Hands on}
+%    In the Google Colab template provided, 
+%    \begin{enumerate}
+%        \item (implement the rule-based controller (RBC), test the values of the example of slide \ref{RBC_example})
+%        \item implement the optimization-based controller of Problem~\eqref{eq:RT1}
+%        \item implement the SoC update constraint with perfect efficiency
+%        \item implement the imperfect charge and discharge efficiencies
+%        \item add a grid connection with import and export prices and import/export limits
+%        \item add an electric vehicle to your problem with a long-term charge target.
+%    \end{enumerate}
+%    \begin{itemize}
+%        \item Test each of the controllers above using the time series of PV generation and load provided.
+%        \item Report the total cost, the PV energy curtailed, and the usage of the battery.
+%        \item Bonus: find an input state that makes Problem~\eqref{eq:RT1} infeasible, implement Problem~\eqref{eq:RT2}, and compare.
+%    \end{itemize}
+%    
+%\end{frame}
