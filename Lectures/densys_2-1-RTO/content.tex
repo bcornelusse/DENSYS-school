@@ -310,10 +310,28 @@ This leads to Problem~\eqref{eq:RT2}.
             Assume $p^{bat} = -10 kW$, although the battery generates 10 kW over $\Delta t$, it will be discharged by only $10 kW \Delta t \times \eta$.    
         \end{block}
         \item The optimizer may lead to a solution with simultaneous charge and discharge. 
-        This can be avoided by adding constraints, such as $p^{bat, charge}\ times p^{bat, discharge} = 0$, or introducing binary variables. The problem becomes either a non-linear program (NLP) or a mixed-integer linear program (MILP).
+        This can be avoided by adding constraints, such as $p^{bat, charge} \times p^{bat, discharge} = 0$, or introducing binary variables. The problem becomes either a non-linear program (NLP) or a mixed-integer linear program (MILP).
         \item Non-linear efficiencies.
     \end{itemize}
 \end{frame}
+
+\begin{frame}[allowframebreaks]{Non-linear efficiency}
+
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{images/Non-Ideal_Linear_Operation_Model_for_Li-Ion_Batteries.pdf} \\
+        From the reference cited on the next slide.
+    \end{center}
+    
+    It is possible to approximate non-linear efficiency and also maximal charge and discharge power using linear models.
+    They depend on the SoC and the power. 
+    
+    In the article below, a convex envelope of the operating region is employed to obtain a linear model with a moderate increase in the number of variables and solution time.
+
+    \textit{Gonzalez-Castellanos, A. J., Pozo, D., \& Bischi, A. (2019). Non-ideal linear operation model for li-ion batteries. IEEE Transactions on Power Systems, 35(1), 672-682.}
+
+    Remark: converter inefficiency may also lead to a low charge or discharge efficiency at very low power.
+\end{frame}
+
 
 \begin{frame}[allowframebreaks]{Grid connection}
     A grid connection allows importing $p^{imp}_t$ or exporting $p^{exp}_t$ power to the grid but also increases the system's inertia, offers the possibility to provide ancillary services, etc.
@@ -415,22 +433,6 @@ Open question: do you see other adaptations?
 \end{frame}
 
 
-\begin{frame}[allowframebreaks]{Non-linear efficiency}
-
-    \begin{center}
-        \includegraphics[width=0.6\textwidth]{images/Non-Ideal_Linear_Operation_Model_for_Li-Ion_Batteries.pdf} \\
-        From the reference cited on the next slide.
-    \end{center}
-    
-    It is possible to approximate non-linear efficiency and also maximal charge and discharge power using linear models.
-    They depend on the SoC and the power. 
-    
-    In the article below, a convex envelope of the operating region is employed to obtain a linear model with a moderate increase in the number of variables and solution time.
-
-    \textit{Gonzalez-Castellanos, A. J., Pozo, D., \& Bischi, A. (2019). Non-ideal linear operation model for li-ion batteries. IEEE Transactions on Power Systems, 35(1), 672-682.}
-
-    Remark: converter inefficiency may also lead to a low charge or discharge efficiency at very low power.
-\end{frame}
 
 
 \begin{frame}{Avoiding multiple solutions}
