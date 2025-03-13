@@ -14,6 +14,7 @@
   \frametitle{For more info}
 
 Short intro in my PhD thesis: \url{https://orbi.uliege.be/handle/2268/82167}
+
 An introductory course: \url{https://people.montefiore.uliege.be/lwh/AIA/}
 
 
@@ -199,7 +200,7 @@ Application: if you have 365 days of conmumption data with 15 minute resolution,
   \begin{itemize}
     \item We usually don't know the joint distribution.
     \item Instead, minimize an estimate of the expected loss, the \textbf{empirical loss}:
-      \[ \frac{1}{N} \sum_{i=1}^{N} L(y_i, h(x_i)) \]
+      \[ \frac{1}{N} \sum_{i=1}^{N} L(y_i, f(x_i)) \]
   \end{itemize}
 \end{frame}
 
@@ -216,7 +217,7 @@ Application: if you have 365 days of conmumption data with 15 minute resolution,
     \begin{column}{0.5\textwidth}
       \begin{itemize}
         \item Polynomial of degree 1 regression model with 1 input and 1 output.
-        \item Equation: $h(X) = \omega_0 + \omega_1 X$ 
+        \item Equation: $f(X) = \omega_0 + \omega_1 X$ 
         \item Learning phase: Find values for $\omega_0$ and $\omega_1$ to best fit the training set. 
       \end{itemize}
     \end{column}
@@ -231,7 +232,7 @@ Application: if you have 365 days of conmumption data with 15 minute resolution,
     \begin{column}{0.5\textwidth}
   \begin{itemize}
     \item Polynomial of degree 4 regression model with 1 input and 1 output
-    \item Equation: $h(X) = \omega_0 + \omega_1 X + \omega_2 X^2 + \omega_3 X^3 + \omega_4 X^4$
+    \item Equation: $f(X) = \omega_0 + \omega_1 X + \omega_2 X^2 + \omega_3 X^3 + \omega_4 X^4$
     \item Learning phase: Find values for $\omega_0$, $\omega_1$, $\omega_2$, $\omega_3$, $\omega_4$ to best fit the training set.
   \end{itemize}
 \end{column}
@@ -246,7 +247,7 @@ Application: if you have 365 days of conmumption data with 15 minute resolution,
     \begin{column}{0.5\textwidth}
   \begin{itemize}
     \item Polynomial of degree 20 regression model with 1 input and 1 output.
-    \item Equation: $h(X) = \sum_{i=0}^{20} \omega_i X^i$
+    \item Equation: $f(X) = \sum_{i=0}^{20} \omega_i X^i$
     \item Learning phase: Find values for $\omega_0, \dots, \omega_{20}$ to best fit the training set.
   \end{itemize}
 \end{column}
