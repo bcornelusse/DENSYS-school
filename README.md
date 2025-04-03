@@ -31,5 +31,5 @@ Teaching assistants:
 |         |       | [Hand on forecasting session](https://colab.research.google.com/drive/1hvI10_m99pxUdT3mnqaDrtBieKiPjTwf?usp=sharing) |
 |         | PM    | [Operational planning lecture](pdf/20250401_microgrids_optimization.pdf) |
 |         | PM    | [Graded assignment presentation](pdf/Homeworks/OP_SIZING_HW2.pdf) and archive for [the python code](pdf/Homeworks/Densys_OPSizing.zip) |
-| April 3 | AM    |  Sizing lecture |
+| April 3 | AM    |  [Sizing lecture](pdf/Sizing_slides.pdf) |
 
