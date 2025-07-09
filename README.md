@@ -28,7 +28,7 @@ Teaching assistants:
 |  March 13         | Morning | [Introduction to machine learning](pdf/densys_ML.pdf) |
 | March 26 | 2PM - 5PM  | Q&A real-time optimization assignment |
 | April 2 | AM    | [Introduction to point forecasting lecture](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) |
-|         |       | [Hand on forecasting session](https://colab.research.google.com/drive/1hvI10_m99pxUdT3mnqaDrtBieKiPjTwf?usp=sharing) |
+|         |       | [Hands on forecasting session](https://colab.research.google.com/drive/1hvI10_m99pxUdT3mnqaDrtBieKiPjTwf?usp=sharing) |
 |         | PM    | [Operational planning lecture](pdf/20250401_microgrids_optimization.pdf) |
 |         | PM    | [Graded assignment presentation](pdf/Homeworks/OP_SIZING_HW2.pdf) and archive for [the python code](pdf/Homeworks/Densys_OPSizing.zip) |
 | April 3 | AM    |  [Sizing lecture](pdf/Sizing_slides.pdf) |
