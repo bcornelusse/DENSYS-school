@@ -22,7 +22,7 @@ Teaching assistants:
 | February 10 |  | [Introduction and objectives](Lectures/densys_1-1_intro/main.pdf) |
 |             |  | [Introduction to optimization, a simple network flow problem](pdf/densys_1_2_LP_network_flow.pdf) |
 |             |  | [LP example 1 notebook, Pyomo example](https://colab.research.google.com/drive/1xgO3EhGoG6P5E9BVV7QyPgLJM5HdNDrY?usp=sharing), [LP example 2 notebook](https://colab.research.google.com/drive/1ujoTNfu2_sCoVK7ksqbXgusmAAizvIip?usp=sharing) |
-|             |  | [Homework](https://colab.research.google.com/drive/1lrWL7sOrazTzlapVxcxrv_ZvVUZADC0h?usp=sharing) |
+|             |  | [Hands-on session](https://colab.research.google.com/drive/1lrWL7sOrazTzlapVxcxrv_ZvVUZADC0h?usp=sharing) |
 | February 11 |  | [Real-time optimization of a microgrid](pdf/densys_2_1_RTO.pdf) |
 |  March 13   | Morning | Rule-based secondary control of a microgrid & presentation of the first assignment by students |
 |             |  | [Presentation of the second assignment](pdf/Homeworks/RealTime_HW.pdf) and [python code](pdf/Homeworks/Densys_RealTime.zip) |
