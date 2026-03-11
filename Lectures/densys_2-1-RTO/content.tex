@@ -285,7 +285,7 @@ This leads to Problem~\eqref{eq:RT2}.
     The battery management system (BMS) usually provides up-to-date limits to the battery power $p^{bat}$ that reflect not only the inverter capability but also the SoC of the battery, the impact of the battery temperature, etc.
     
     As a security, the SoC $s^{bat}$ can be tracked with 
-    $$s^{bat}_{t+\Delta t} = S^{bat}_{t} + p^{bat}_t  \Delta t$$
+    $$s^{bat}_{t+\Delta t} = S^{bat}_{t} - p^{bat}_t  \Delta t$$
     and bounded by SoC limits
     $$ \underline{S}^{bat} \leq s^{bat}_{t+\Delta t} \leq \bar{S}^{bat}.$$
 
