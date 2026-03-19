@@ -32,7 +32,8 @@ Teaching assistants:
 | April XX (TBD)     | Evaluation of the first assignment (online session) |
 | May 5-6            |  **To be updated**[Operational planning lecture](pdf/20250401_microgrids_optimization.pdf) (pdf/Homeworks/Densys_OPSizing.zip) |
 |                    |  [Sizing lecture](pdf/Sizing_slides.pdf) |
-|                    |  **To be updated** [Statement of the second assignment](pdf/Homeworks/OP_SIZING_HW2.pdf) and archive for [the python code] and |  |                    |  Work Session on the second assignment |
+|                    |  **To be updated** [Statement of the second assignment](pdf/Homeworks/OP_SIZING_HW2.pdf) and archive for [the python code] and |  
+|                    |  Work Session on the second assignment |
 | May XX (TBD)       | Evaluation of the second assignment (online session) |
 
 
