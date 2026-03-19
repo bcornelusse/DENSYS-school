@@ -29,11 +29,10 @@ Teaching assistants:
 |                    |  [Introduction to point forecasting lecture](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf)|
 |                    |  [Hands-on forecasting session](https://colab.research.google.com/drive/1hvI10_m99pxUdT3mnqaDrtBieKiPjTwf?usp=sharing) |
 |                    |  Work Session on the first assignment |
-| April XX           | Evaluation of the first assignment (online session) |
-(pdf/Homeworks/Densys_OPSizing.zip) |
-| May 5-6            |  **To be updated**[Operational planning lecture](pdf/20250401_microgrids_optimization.pdf) |
+| April XX (TBD)     | Evaluation of the first assignment (online session) |
+| May 5-6            |  **To be updated**[Operational planning lecture](pdf/20250401_microgrids_optimization.pdf) (pdf/Homeworks/Densys_OPSizing.zip) |
 |                    |  [Sizing lecture](pdf/Sizing_slides.pdf) |
 |                    |  **To be updated** [Statement of the second assignment](pdf/Homeworks/OP_SIZING_HW2.pdf) and archive for [the python code] and working session |
-| May XX           | Evaluation of the second assignment (online session) |
+| May XX (TBD)       | Evaluation of the second assignment (online session) |
 
 
