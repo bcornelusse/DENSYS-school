@@ -27,9 +27,9 @@ Teaching assistants:
 | March 19           |  [Statement of the first assignment](Homeworks/RealTime_HW.pdf) and [python code](Homeworks/RealTime_HW.zip) |
 |                    |  _(Case study may be updated on March 31, but you can already start to develop the controllers)_ |
 | March 31 - April 1 |  [Introduction to machine learning](Lectures/densys_ML/densys-ML.pdf)  |
-|                    |  [Introduction to point forecasting lecture](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf)|
-|                    |  [Hands-on forecasting session](https://colab.research.google.com/drive/1hvI10_m99pxUdT3mnqaDrtBieKiPjTwf?usp=sharing) |
 |                    |  Work Session on the first assignment |
+|                    |  [Introduction to point forecasting lecture](https://github.com/bcornelusse/ELEN0445-microgrids/blob/master/slides/opt_3_forecasting/opt_3_forecasting.pdf)|
+|                    |  [Hands-on forecasting session](https://colab.research.google.com/drive/1hvI10_m99pxUdT3mnqaDrtBieKiPjTwf?usp=sharing) |
 | April XX (TBD)     | Evaluation of the first assignment (online session) |
 | May 5-6            |  **To be updated**[Operational planning lecture](pdf/20250401_microgrids_optimization.pdf) (pdf/Homeworks/Densys_OPSizing.zip) |
 |                    |  [Sizing lecture](pdf/Sizing_slides.pdf) |
