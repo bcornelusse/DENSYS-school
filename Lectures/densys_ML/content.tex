@@ -119,6 +119,7 @@
 \end{column}
 \begin{column}{0.5\textwidth}
   \begin{center}
+    %TODO add a view where clusters are not present
     \includegraphics[width=0.8\textwidth]{images/clustering.png}
   \end{center}
 \end{column}
@@ -135,19 +136,12 @@ Example application:
 
 \end{frame}
 
-\begin{frame}{Reinforcement Learning}
+\begin{frame}[allowframebreaks]{Reinforcement Learning}
   \begin{columns}
     \begin{column}{0.55\textwidth}
   \begin{itemize}
     \item Learning from interactions with an environment.
-    \item Goal: By interacting with and environment, learn to take actions in any given state to maximize a reward function.
-    \item Example:
-      \begin{itemize}
-        \item State: Robot position in a labyrinth.
-        \item Actions: Go ahead, turn right, turn left.
-        \item Reward: Get a reward each time the robot gets out.
-        \item Goal: Learn how to get out as fast as possible.
-      \end{itemize}
+    \item Goal: learn to take actions ($a$) in any given state ($s$) to maximize a rewards collected.
   \end{itemize}
 \end{column}
 \begin{column}{0.45\textwidth}
@@ -155,10 +149,34 @@ Example application:
   \begin{center}
     \includegraphics[width=\textwidth]{images/RL.png}
   \end{center}
-
 \end{column}
 \end{columns}
+
+\begin{block}{Maze example}
+Consider an agent 
+\begin{itemize}
+  \item who wants to exit of a maze of dimensions $m$ and $n$ 
+  \item and can go left, right, up or down.  
+\end{itemize}
+\end{block}
+
+Questions:
+\begin{itemize}
+  \item What is the size of the state space?
+  \item What is the size of the action space?
+  \item How would you \textit{shape} the rewards to incentivize the robot getting out as fast as possible (least number of steps, and avoid bumping into walls)?
+\end{itemize}
+
+One way to solve this problem is to compute a state-value function $Q(s,a)$ that expresses 
+the expected cumulative reward (or return) when starting from state $s$ and taking action $a$, following an optimal policy thereafter.
+
+\begin{center}
+\href{https://colab.research.google.com/drive/1SoSubqykgjXIe6-UMHTZgH9xfg6dQ4xG?usp=sharing}{\alert{\underline{Link to the colab example}}}  
+\end{center}
+
 \end{frame}
+
+
 
 \section{Supervised Learning}
 
@@ -224,6 +242,7 @@ Example application:
 
 
 \begin{frame}{Linear Model}
+  % todo apply linear regression to actual data such as price of electricity as a function of time of the day on data from belgium in 2025
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \begin{itemize}
@@ -239,6 +258,7 @@ Example application:
 \end{frame}
 
 \begin{frame}{Polynomial of degree 4}
+  % todo apply polynomial regression deg 4 to actual data such as price of electricity as a function of time of the day on data from belgium in 2025
   \begin{columns}
     \begin{column}{0.5\textwidth}
   \begin{itemize}
@@ -254,6 +274,7 @@ Example application:
 \end{frame}
 
 \begin{frame}{Polynomial of degree 20}
+  % todo apply polynomial regression deg 20 to actual data such as price of electricity as a function of time of the day on data from belgium in 2025
   \begin{columns}
     \begin{column}{0.5\textwidth}
   \begin{itemize}
@@ -269,6 +290,7 @@ Example application:
 \end{frame}
 
 \begin{frame} {Model Selection}
+  % todo compute actual train and test values an report in a table
   \begin{columns}
     \begin{column}{0.5\textwidth}
     Error\footnote{E.g. mean absolute error, see page \ref{regression_metrics}.} on the \alert{training set}
