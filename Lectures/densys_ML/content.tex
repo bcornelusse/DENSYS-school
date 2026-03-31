@@ -123,12 +123,21 @@
   \end{center}
 \end{column}
 \end{columns}
-Application: if you have 365 days of consumption data with 15 minute resolution, identify e.g. a subset of 12 days that represent well the 365 days.
+Example application: 
+\begin{itemize}
+  \item you have 365 days of consumption data with 15 minute resolution, 
+  \item identify e.g. a subset of 12 days that represent well the 365 days.
+  \item useful to reduce the size of a microgrid sizing problem
+\end{itemize}
+
+
+
+
 \end{frame}
 
 \begin{frame}{Reinforcement Learning}
   \begin{columns}
-    \begin{column}{0.6\textwidth}
+    \begin{column}{0.55\textwidth}
   \begin{itemize}
     \item Learning from interactions with an environment.
     \item Goal: By interacting with and environment, learn to take actions in any given state to maximize a reward function.
@@ -141,10 +150,10 @@ Application: if you have 365 days of consumption data with 15 minute resolution,
       \end{itemize}
   \end{itemize}
 \end{column}
-\begin{column}{0.4\textwidth}
+\begin{column}{0.45\textwidth}
 
   \begin{center}
-    \includegraphics[width=0.9\textwidth]{images/RL.png}
+    \includegraphics[width=\textwidth]{images/RL.png}
   \end{center}
 
 \end{column}
@@ -155,10 +164,10 @@ Application: if you have 365 days of consumption data with 15 minute resolution,
 
 \begin{frame}{Supervised Learning (SL)}
   \begin{itemize}
-    \item Data organized as a set of $N$ objects described by input features and output labels.
+    \item Data organized as a set of $N$ \textbf{objects} described by input features and output labels.
     $$\{(x_1, y_1), (x_2, y_2), \dots, (x_N, y_N)\} $$
-    \item Features $x_i$ are easily obtained by observation.
-    \item Output $y_i$ is provided by an expert or is the result of difficult/costly observation/computation.
+    \item \textbf{Features} $x_i$ are easily obtained by observation.
+    \item \textbf{Output label} $y_i$ is provided by an expert or is the result of difficult/costly observation/computation.
   \end{itemize}
 \end{frame}
 
@@ -200,8 +209,8 @@ Application: if you have 365 days of consumption data with 15 minute resolution,
 
 \begin{frame}{Empirical Loss Minimization}
   \begin{itemize}
-    \item We usually don't know the joint distribution.
-    \item Instead, minimize an estimate of the expected loss, the \textbf{empirical loss}:
+    \item We usually don't know the joint distribution over inputs and outputs $\mathbb{P}_{X,Y}$.
+    \item Instead, we thus minimize an estimate of the expected loss, the \textbf{empirical loss}:
       \[ \frac{1}{N} \sum_{i=1}^{N} L(y_i, f(x_i)) \]
   \end{itemize}
 \end{frame}
