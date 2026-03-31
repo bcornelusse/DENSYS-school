@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1739285487 "/Users/bcornelusse/Documents/GitHub/DENSYS-school/Lectures/densys_1-1_intro/main.tex" "main.pdf" "main" 1739285489 0
-  "/Users/bcornelusse/Documents/GitHub/DENSYS-school/Lectures/densys_1-1_intro/main.tex" 1739285487 1694 6731ae8352575bd010805155dfd3c933 ""
+["pdflatex"] 1774904435 "/Users/bcornelusse/Documents/GitHub/DENSYS-school/Lectures/densys_1-1_intro/main.tex" "main.pdf" "main" 1774904436 0
+  "/Users/bcornelusse/Documents/GitHub/DENSYS-school/Lectures/densys_1-1_intro/main.tex" 1774904435 1694 dca8afc26cbc9683c8a647a9a041fc12 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1587936753 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -247,16 +247,15 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "PV.png" 1739281698 97352 2681f8239fef26f0aa6e9e56b7674b0d ""
   "banner.jpg" 1739281698 99795 af79bb9b723ea250eabb673b7e5b721c ""
-  "content.aux" 1739285489 3963 bfd531a582cc6a66733dc994d4c58458 "pdflatex"
-  "content.tex" 1739281698 4602 a328d007b82dfb9d3f7c75243a66efed ""
+  "content.aux" 1774904436 3963 bfd531a582cc6a66733dc994d4c58458 "pdflatex"
+  "content.tex" 1773128021 4603 ff11edcd4f3068c32c5d22de0eec2bf9 ""
   "distrib.pdf" 1739281698 44481 9b72e9d2e5024a0bf315d2b2a91e189c ""
-  "frame.png" 1739281698 257683 28877c6f55a294a207a5e57b7815adf1 ""
   "grid_user.pdf" 1739281698 38409 6f57b9cd8af778a23d28f1ba95332166 ""
-  "main.aux" 1739285489 892 ed4dda542b1484b9fd647d492f0d2083 "pdflatex"
-  "main.nav" 1739285489 2389 f037bc7a8a997167e5da298ce7907c19 "pdflatex"
-  "main.out" 1739285489 504 a380ec44400953459efa427f4ca5ffa2 "pdflatex"
-  "main.tex" 1739285487 1694 6731ae8352575bd010805155dfd3c933 ""
-  "main.toc" 1739285489 181 af9b5bc9812cda1a52eb4d4d54760d55 "pdflatex"
+  "main.aux" 1774904436 892 ed4dda542b1484b9fd647d492f0d2083 "pdflatex"
+  "main.nav" 1774904436 2389 f037bc7a8a997167e5da298ce7907c19 "pdflatex"
+  "main.out" 1774904436 504 a380ec44400953459efa427f4ca5ffa2 "pdflatex"
+  "main.tex" 1774904435 1694 dca8afc26cbc9683c8a647a9a041fc12 ""
+  "main.toc" 1774904436 181 af9b5bc9812cda1a52eb4d4d54760d55 "pdflatex"
   "uliege_faculte_sciencesappliquees_logo_rvb_pos.pdf" 1739281698 30611 c4cfcaecb7f7a9d206e8e44c7b48bb65 ""
   (generated)
   "content.aux"

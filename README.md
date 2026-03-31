@@ -26,7 +26,7 @@ Teaching assistants:
 | February 11 |  | [Real-time optimization of a microgrid](Lectures/densys_2-1-RTO/densys_2-1-RTO.pdf) |
 |  March 13   | Morning | Rule-based secondary control of a microgrid & presentation of the first assignment by students |
 |             |  | [Presentation of the second assignment](pdf/Homeworks/RealTime_HW.pdf) and [python code](pdf/Homeworks/Densys_RealTime.zip) |
-|             |  | [Introduction to machine learning](pdf/densys_ML.pdf) |
+|             |  | [Introduction to machine learning](Lectures/densys_ML/densys-ML.pdf) |
 | March 26 | 2PM - 5PM  | Q&A real-time optimization assignment |
 | April 2 | AM    | [Introduction to point forecasting lecture](https://github.com/jonathandumas/ELEN0445-1-microgrids-forecasting/blob/2b91cfc1b637b2ff17b13786b2407df66b6ac485/pdf/ELEN0445-1-microgrids-forecasting-lesson-1-2021.pdf) |
 |         |       | [Hands on forecasting session](https://colab.research.google.com/drive/1hvI10_m99pxUdT3mnqaDrtBieKiPjTwf?usp=sharing) |
