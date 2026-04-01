@@ -35,6 +35,6 @@ Teaching assistants:
 |                    |  [Sizing lecture](pdf/Sizing_slides.pdf) |
 |                    |  **To be updated** [Statement of the second assignment](pdf/Homeworks/OP_SIZING_HW2.pdf) and archive for [the python code] |  
 |                    |  Work Session on the second assignment |
-| May XX (TBD)       | Evaluation of the second assignment (online session) |
+| May 26 PM          | Evaluation of the second assignment (online session) |
 
 
