@@ -28,7 +28,7 @@ Teaching assistants:
 |                    |  _(Case study may be updated on March 31, but you can already start to develop the controllers)_ |
 | March 31 - April 1 |  [Introduction to machine learning](Lectures/densys_ML/densys-ML.pdf)  |
 |                    |  Work Session on the first assignment |
-|                    |  [Introduction to point forecasting lecture](https://github.com/bcornelusse/ELEN0445-microgrids/blob/master/slides/opt_3_forecasting/opt_3_forecasting.pdf)|
+|                    |  [Introduction to point forecasting](https://github.com/bcornelusse/ELEN0445-microgrids/blob/master/slides/opt_3_forecasting/opt_3_forecasting.pdf)|
 |                    |  [Hands-on forecasting session](https://colab.research.google.com/drive/1hvI10_m99pxUdT3mnqaDrtBieKiPjTwf?usp=sharing) |
 | April 27           | Deadline for sending the first assignment, send report to tstegen@uliege.be and clement.moureau@uliege.be |
 | April 29-30        | Evaluation of the first assignment (online session: [schedule](https://docs.google.com/spreadsheets/d/1xCfVjPnddW3uFhDZi08-J2GviKy7DqEZ4NS9Y8JzqwM/edit?gid=1014890519#gid=1014890519)) |
