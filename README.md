@@ -36,7 +36,7 @@ Teaching assistants:
 |                    |  [Sizing lecture](https://github.com/bcornelusse/ELEN0445-microgrids/blob/master/slides/opt_5_sizing/opt_5_sizing.pdf) |
 |                    |  [Statement of the second assignment](Homeworks/Densys_HW2.pdf) and [archive for the python code](Homeworks/Densys_HW2.zip) |  
 |                    |  Work Session on the second assignment |
-| May 24             | Deadline for sending the second assignment, send report to tstegen@uliege.be and bertrand.cornelusse@uliege.be |
-| May 26 PM          | Evaluation of the second assignment (online session: [schedule](https://docs.google.com/spreadsheets/d/1xCfVjPnddW3uFhDZi08-J2GviKy7DqEZ4NS9Y8JzqwM/edit?gid=1014890519#gid=1014890519)) |
+| May 27             | Deadline for sending the second assignment, send report to tstegen@uliege.be and bertrand.cornelusse@uliege.be |
+| May 29 PM          | Evaluation of the second assignment (online session: [schedule](https://docs.google.com/spreadsheets/d/1xCfVjPnddW3uFhDZi08-J2GviKy7DqEZ4NS9Y8JzqwM/edit?gid=1014890519#gid=1014890519)) |
 
 
